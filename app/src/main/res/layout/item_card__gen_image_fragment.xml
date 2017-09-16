@@ -1,0 +1,158 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/Re01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivUserPic_genIv"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_userphoto_icon"
+                card_view:civ_border_color="#000000"
+                card_view:civ_border_width="0dp" />
+
+            <TextView
+                android:id="@+id/tvName_genIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="#4f4f4f"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/ivUserPic_genIv"
+                android:text="Manno" />
+
+            <ImageButton
+                android:id="@+id/ibMenu_genIv"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:background="#ffffff"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                card_view:srcCompat="@drawable/ic_other_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Re02"
+            android:layout_below="@+id/Re01"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivContext_genIv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                card_view:srcCompat="@drawable/ic_item01_icon" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Re03"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/Re02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivTime_genIV"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/tvTime_genIv"
+                card_view:srcCompat="@drawable/ic_time_icon" />
+
+            <TextView
+                android:id="@+id/tvTime_genIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:text="2小时前发布" />
+            <com.sackcentury.shinebuttonlib.ShineButton
+                android:id="@+id/shinebutton1_genIv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="#e6e6e6"
+                app:allow_random_color="false"
+                app:btn_color="#797979"
+                app:btn_fill_color="#fb0019"
+                app:siShape="@drawable/ic_like_icon" />
+
+            <TextView
+                android:id="@+id/tvlikeTimes_genIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/shinebutton1_genIv"
+                android:text="10" />
+
+            <com.sackcentury.shinebuttonlib.ShineButton
+                android:id="@+id/shinebutton2_genIv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_toRightOf="@+id/tvlikeTimes_genIv"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:src="#e6e6e6"
+                app:allow_random_color="false"
+                app:btn_color="#797979"
+                app:btn_fill_color="#2600fb"
+                app:siShape="@drawable/ic_comment_icon" />
+            <TextView
+                android:id="@+id/tvCommentTime_genIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/shinebutton2_genIv"
+                android:text="10" />
+
+            <com.sackcentury.shinebuttonlib.ShineButton
+                android:id="@+id/shinebutton3_genIv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_toRightOf="@+id/tvCommentTime_genIv"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:src="#e6e6e6"
+                app:allow_random_color="false"
+                app:btn_color="#797979"
+                app:btn_fill_color="#edfe00"
+                app:siShape="@drawable/ic_share_icon" />
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/line_bar_home"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/Re03"
+            android:background="#e7e7e7" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

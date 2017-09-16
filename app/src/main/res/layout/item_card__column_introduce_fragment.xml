@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/Re04_colInt"
+            android:layout_below="@+id/Re01"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvIntroduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/introduce" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Re01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvName_colInt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/ivUserPic_colInt"
+                android:layout_marginLeft="8dp"
+                android:text="你的名字"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivUserPic_colInt"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_userphoto_icon"
+                card_view:civ_border_color="#000000"
+                card_view:civ_border_width="1dp" />
+
+            <TextView
+                android:id="@+id/tvTimes_colInt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvName_colInt"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/ivUserPic_colInt"
+                android:text="20K 人关注·650篇文章" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTimes_colInt"
+                android:layout_toRightOf="@id/ivUserPic_colInt"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:background="#8e8e8e" />
+
+                <Button
+                    android:id="@+id/btInt"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:background="#ffffff"
+                    android:text="显示简介" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Re02"
+            android:layout_below="@+id/Re04_colInt"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvNewMess_colInt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#8e8e8e"
+                android:textSize="18sp"
+
+                android:text="最近更新：开眼，OF光海可以这样用！" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Re03"
+            android:layout_below="@+id/Re02"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvLabel_colInt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ivGuide01"
+                android:text="大学 校园 文化" />
+
+            <ImageView
+                android:id="@+id/ivGuide01"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                card_view:srcCompat="@drawable/ic_lable_icon" />
+
+            <Button
+                android:id="@+id/btFollow_colInt"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/button"
+                android:layout_alignParentEnd="true"
+                android:text="关注" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="首页"
+        android:icon="@drawable/ic_home_icon"
+        fragment="com.wmpscc.intercampus10.Home"
+        ></item>
+    <item
+        android:title="发现"
+        android:icon="@drawable/ic_explore_icon"
+        fragment="com.wmpscc.intercampus10.Explore"
+        ></item>
+    <item
+        android:title="闪聊"
+        android:icon="@drawable/ic_group_icon"
+        fragment="com.wmpscc.intercampus10.Chat"
+        ></item>
+    <item
+        android:title="我的"
+        android:icon="@drawable/ic_mine_icon"
+        fragment="com.wmpscc.intercampus10.Mine"
+        ></item>
+</menu>

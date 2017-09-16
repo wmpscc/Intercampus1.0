@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wmpscc.intercampus10.Home">
+
+
+    <RelativeLayout
+        android:id="@+id/Re01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/ibEdit_home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#ffffff"
+            android:scaleType="fitCenter"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_edit_icon" />
+
+        <TextView
+            android:id="@+id/tvTITTLE_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="首页"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:typeface="monospace" />
+
+        <ImageButton
+            android:id="@+id/ibSearch_home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#ffffff"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_search_icon" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvlist_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Re01"
+        app:layoutManager="LinearLayoutManager"
+        android:layout_above="@+id/line_bar_home"
+     />
+    <View
+        android:id="@+id/line_bar_home"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff" />
+
+</RelativeLayout>

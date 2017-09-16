@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.wmpscc.intercampus10.ExploreSubpage01">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvlist_e1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Re01"
+        app:layoutManager="LinearLayoutManager"
+        android:layout_above="@+id/line_bar_home"
+        />
+
+</RelativeLayout>
