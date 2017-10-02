@@ -56,6 +56,15 @@ public class Chat extends Fragment {
         items.add(new Chat_ColBlock());
         items.add(new guide_genblock());
         items.add(new Chat_GenBlock());
+        items.add(new Chat_GenBlock());
+        items.add(new Chat_GenBlock());
+        items.add(new Chat_GenBlock());
+        items.add(new Chat_GenBlock());
+        items.add(new Chat_GenBlock());
+        items.add(new Chat_GenBlock());
+        items.add(new Chat_GenBlock());
+        items.add(new Chat_GenBlock());
+        items.add(new Chat_GenBlock());
 
         adapter.setItems(items);
         adapter.notifyDataSetChanged();

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivBackground_chatcol"
+            android:layout_width="350dp"
+            android:layout_height="210dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_topicbackground_icon" />
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="210dp"
+            android:background="#55000000">
+
+            <TextView
+                android:id="@+id/tvTittle_chatcol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="看山看水看中国"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
