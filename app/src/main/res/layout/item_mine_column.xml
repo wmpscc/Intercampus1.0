@@ -24,6 +24,7 @@
                 android:id="@+id/tvIntroduce"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:typeface="monospace"
                 android:text="@string/introduce" />
         </RelativeLayout>
 
@@ -36,6 +37,7 @@
                 android:id="@+id/tvName_colInt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:typeface="monospace"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/ivUserPic_colInt"
                 android:layout_marginLeft="8dp"
@@ -56,6 +58,7 @@
                 android:id="@+id/tvTimes_colInt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:typeface="monospace"
                 android:layout_below="@+id/tvName_colInt"
                 android:layout_marginLeft="8dp"
                 android:layout_toRightOf="@id/ivUserPic_colInt"
@@ -101,6 +104,7 @@
                 android:id="@+id/tvNewMess_colInt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:typeface="monospace"
                 android:textColor="#8e8e8e"
                 android:textSize="18sp"
 
@@ -119,6 +123,7 @@
                 android:id="@+id/tvLabel_colInt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:typeface="monospace"
                 android:layout_marginLeft="10dp"
                 android:layout_centerVertical="true"
                 android:layout_toRightOf="@+id/ivGuide01"

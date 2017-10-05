@@ -28,6 +28,7 @@
                 android:id="@+id/tvTittle_chatcol"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:typeface="monospace"
                 android:text="看山看水看中国"
                 android:textColor="#ffffff"
                 android:textSize="20sp"

@@ -7,6 +7,7 @@
         android:id="@+id/guide_01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:typeface="monospace"
         android:text="闪聊空间"
         android:textColor="#aeaeae"
         android:textSize="20sp"

@@ -14,6 +14,7 @@
             android:id="@+id/guide_column"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:typeface="monospace"
             android:text="专栏更新"
             android:textColor="#aeaeae"
             android:textSize="23sp" />
